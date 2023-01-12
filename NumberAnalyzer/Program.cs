@@ -8,7 +8,7 @@ userName = Console.ReadLine();
 
 while (userAnswer != "exit")
 { 
-    Console.WriteLine($"\nAlright, {userName}, Please enter an integer between 1 and 100.");
+    Console.WriteLine($"\nAlright {userName}, Please enter an integer between 1 and 100.");
     userNumber = Console.ReadLine();
     if (int.TryParse(userNumber, out int number))
     {
@@ -34,13 +34,13 @@ while (userAnswer != "exit")
         {
             Console.WriteLine($"\n{userName}, {userNumberParse} is Odd and greater than 60.");
         }
-        Console.WriteLine($"\nOkay, {userName}, if you would like to exit the program, please type \"exit\" \n" +
+        Console.WriteLine($"\nOkay {userName}, if you would like to exit the program, please type \"exit\" \n" +
             $"and press enter. Simply press enter to repeat the number analyzer program.");
         userAnswer = Console.ReadLine().ToLower().Trim();
     }
     else
     {
-        Console.WriteLine($"\nSorry, {userName}, That is an invalid number.");
+        Console.WriteLine($"\nSorry {userName}, That is an invalid number.");
     }
 
  
