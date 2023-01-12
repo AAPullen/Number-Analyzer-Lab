@@ -36,7 +36,7 @@ while (userAnswer != "exit")
         }
         Console.WriteLine($"\nOkay, {userName}, if you would like to exit the program, please type \"exit\" \n" +
             $"and press enter. Simply press enter to repeat the number analyzer program.");
-        userAnswer = Console.ReadLine();
+        userAnswer = Console.ReadLine().ToLower().Trim();
     }
     else
     {
